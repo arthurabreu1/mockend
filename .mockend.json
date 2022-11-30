@@ -6,7 +6,12 @@
     }
   },
   "Product": {
-    "body": { "string": {} },
+    "code": { "int": {} },
+    "name": { "string": {} },
+    "description": { "string": {} },
+    "fispq_url": { "string": {} },
+    "barcode": { "int": {} },
+    "qrcode": { "int": {} },
     "category": {
       "belongsTo": "Category"
     }

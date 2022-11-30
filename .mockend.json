@@ -1,6 +1,20 @@
 {
   "Category": {
-    "title": { "string": {} },
+    "title": { 
+      "string": [
+        "Acidos",
+        "Aditivos",
+        "Cloros",
+        "Coagulantes",
+        "Combustiveis",
+        "Defensivos Agricolas",
+        "Lubrificantes",
+        "Mantas",
+        "Oxidos",
+        "Solventes",
+        "Tintas"
+      ]
+    },
     "products": {
       "hasMany": "Product"
     }

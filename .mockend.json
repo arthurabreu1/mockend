@@ -6,16 +6,17 @@
     }
   },
   "Product": {
-    "code": { 
-      "regexp": "[A-Z0-9]{5}"
-    },
+    "code": { "int": {
+      "min": 11111,
+        "max": 99999
+      } },
     "name": { "string": {} },
     "active": { 
       "boolean": {} 
     },
     "description": { "string": {} },
     "fispq_url": { 
-      "string": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+      "regexp": "/^https?://(?:www.)?[-a-zA-Z0-9@:%._+~#=]{1,256}.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_+.~#?&\/=]*)$/"
     },
     "barcode": {
        "int": {

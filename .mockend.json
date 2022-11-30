@@ -24,8 +24,8 @@
        } },
     "qrcode": { 
       "int": {
-        "min": 111111111111111,
-        "max": 111111111111111
+        "min": 5555555555,
+        "max": 7777777777
       } },
     "category": {
       "belongsTo": "Category"

@@ -6,12 +6,25 @@
     }
   },
   "Product": {
-    "code": { "int": {} },
+    "code": { 
+      "regexp": "[A-Z0-9]{5}" 
+    },
     "name": { "string": {} },
+    "active": { 
+      "boolean": {} 
+    },
     "description": { "string": {} },
     "fispq_url": { "string": {} },
-    "barcode": { "int": {} },
-    "qrcode": { "int": {} },
+    "barcode": {
+       "int": {
+        "min": 10,
+        "max": 10
+       } },
+    "qrcode": { 
+      "int": {
+        "min": 8,
+        "max": 15
+      } },
     "category": {
       "belongsTo": "Category"
     }

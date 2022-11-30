@@ -1,5 +1,14 @@
 {
-  "User": {
-    "title": { "string": {} }
+  "Category": {
+    "title": { "string": {} },
+    "products": {
+      "hasMany": "Product"
+    }
+  },
+  "Product": {
+    "body": { "string": {} },
+    "category": {
+      "belongsTo": "Category"
+    }
   }
 }
